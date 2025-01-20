@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IbragimovLaba5.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+             Padding="30,0"
+             Spacing="25">
+            <Label
+                Text="Добро пожаловать!"
+                FontSize="25"
+                HorizontalOptions="Center"/>
+            <Border Style="{StaticResource StyleForBorder}">
+                <Entry 
+                    x:Name="UserNameEntry"
+                    Placeholder="Имя пользователя"/>
+            </Border>
+
+            <Border Style="{StaticResource StyleForBorder}">
+                <Entry 
+                    x:Name="UserPasswordEntry"
+                    Placeholder="Пароль"/>
+            </Border>
+
+            <Button
+                Text="Войти"
+                Clicked="GoToMenuPage"
+                Style="{StaticResource StandartButtonStyle}"/>
+            <Button Text="Регистрация" 
+                Clicked="GoToRegistrationPage"
+                Style="{StaticResource StandartButtonStyle}"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

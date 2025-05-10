@@ -1,1 +1,0 @@
-<resources><attr format="reference" name="drawerLayoutStyle" /><attr format="dimension" name="elevation" /><dimen name="def_drawer_elevation">10dp</dimen><declare-styleable name="DrawerLayout"><attr name="elevation" /></declare-styleable></resources>
